@@ -10,10 +10,10 @@ export function Sidebar() {
 
             <div className={styles.profile}>
 
-                <Avatar src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+                <Avatar src="https://github.com/andreneery.png"/>
 
-                <strong>Thalita Bispo</strong>
-                <span>Web Developer</span>
+                <strong>André Nery</strong>
+                <span>Vendedor</span>
             </div>
 
             <footer>

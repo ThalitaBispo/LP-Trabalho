@@ -4,7 +4,7 @@
     padding: 2.5rem;
 }
 
-.post + .post {
+.post+.post {
     margin-top: 2rem;
 }
 
@@ -27,13 +27,13 @@
     color: var(--green-300);
 }
 
-.post > header {
+.post>header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.post > header time {
+.post>header time {
     font-size: 0.875rem;
     color: var(--gray-400);
 }
@@ -64,9 +64,23 @@
     border-top: 1px solid var(--gray-600);
 }
 
-.commentForm > strong {
+/* .commentForm>strong {
     line-height: 1.6;
     color: var(--gray-100);
+} */
+
+/*Criado*/
+.commentForm input {
+    width: 100%;
+    background: var(--gray-900);
+    border: 0;
+    resize: none;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.4;
+    margin-top: 1rem;
 }
 
 .commentForm textarea {
