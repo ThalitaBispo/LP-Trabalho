@@ -2,6 +2,7 @@
     background: var(--gray-800);
     border-radius: 8px;
     padding: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .post+.post {
@@ -109,6 +110,7 @@
 .commentForm button[type=submit] {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
+    margin-left: 40%;
     border-radius: 8px;
     border: 0;
     background: var(--green-500);
