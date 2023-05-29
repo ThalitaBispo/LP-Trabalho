@@ -1,8 +1,35 @@
-import styles from './Header.module.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import { Menu } from './Menu';
+import { Post } from './Post';
+import { PostList } from './PostList';
+import { PostEdit } from './PostEdit';
+import { PostDelet } from './PostDelet';
+import { Menu } from './Menu';
+
+import { Sidebar } from './Sidebar.jsx';
+import styles from './Menu.module.css'
 
 export function Header() {
     return (
-        <header className={styles.header}>
-        </header>
+        <div>
+            <BrowserRouter>
+                <Menu />
+                <div>
+                    <div className={styles.wrapper}>
+                        <Sidebar />
+
+                        <main>
+                            <Routes>
+                                <Route path="/" element={<PostList />} />
+                                <Route path="/veiculo/create" element={<Post />} />
+                                <Route path="/veiculo/edit/:id" element={<PostEdit />} />
+                                <Route path="/veiculo/delete/:id" element={<PostDelet />} />
+                            </Routes>
+                        </main>
+
+                    </div>
+                </div>
+            </BrowserRouter>
+        </div>
     );
 }

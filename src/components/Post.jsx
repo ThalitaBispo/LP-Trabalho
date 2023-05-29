@@ -49,6 +49,7 @@ export function Post() {
 
   return (
     <article className={styles.post}>
+
       <div className={styles.content}>
         <p>Formulário de Veículos</p>
       </div>
@@ -139,6 +140,6 @@ export function Post() {
         />
         <button type="submit">Salvar</button>
       </form>
-    </article>
+    </article >
   );
 }
