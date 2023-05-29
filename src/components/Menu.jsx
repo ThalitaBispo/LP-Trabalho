@@ -7,6 +7,7 @@ export function Menu() {
             <div>
                 <Link className={styles.menuText} to="/"> Home </Link>
                 <Link className={styles.menuText} to="/veiculo/create"> Cadastro </Link>
+                <Link className={styles.menuText} to="/veiculos"> Veiculos </Link>
             </div>
         </header>
     )
