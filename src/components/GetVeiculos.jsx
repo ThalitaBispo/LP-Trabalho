@@ -33,7 +33,7 @@ export function Veiculos() {
   return (
     <article className={styles.post}>
       <div className={styles.content}>
-        <h2>VEICULOS</h2>
+        <h2>VEÍCULOS</h2>
       </div>
       <div className={styles.veiculos}>
         <table>
@@ -41,16 +41,16 @@ export function Veiculos() {
             <tr>
               <th>Modelo</th>
               <th>Marca</th>
-              <th> </th>
+              <th>Ações </th>
             </tr>
           </thead>
           <tbody>
             {veiculos.map((veiculo) => (
               <tr key={veiculo.id}>
-                <td>{veiculo.modelo}</td>
-                <td>{veiculo.marca}</td>
+                <td >{veiculo.modelo}</td>
+                <td >{veiculo.marca}</td>
                 <td>
-                  <button onClick={() => handleVeiculoClick(veiculo.id)}>
+                  <button   onClick={() => handleVeiculoClick(veiculo.id)}>
                     Editar
                   </button>
                 </td>

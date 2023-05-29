@@ -1,8 +1,12 @@
 .post {
     background: var(--gray-800);
     border-radius: 8px;
-    padding: 2.5rem;
+    padding: 1rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }
 
 .post+.post {
@@ -12,7 +16,8 @@
 .content {
     line-height: 1.6;
     color: var(--gray-300);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom:3.25rem ;
 }
 
 .content p {
@@ -136,22 +141,83 @@
 
 .veiculos{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: -2rem;
+    padding: 0.2rem;
     border-radius: 8px;
     background: var(--gray-900);
     border: 1px solid var(--gray-600);
+    width: auto;
 }
 
-.veiculos.h2{
-    display: flex;
+.veiculos thead {
+
+    width: 100%;
+    margin-top: 0.1rem;
+    background: var(--gray-900);
+
+    }
+  
+  .veiculos thead th {
+   
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: center;
+    margin: 0.2rem;
     padding: 1rem;
     border-radius: 8px;
     background: var(--gray-900);
-    border: 1px solid var(--gray-600);
-}
+    font-size: 2rem;
+    /* border: 1px solid var(--gray-600); */
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+ td {
+    
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    width: calc(100% / 3);
+    border-collapse: separate;
+    border-top: 1px solid  white ;
+    border-bottom:1px solid  white ;
+
+  }
+
+  
+  button {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: #00875f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  
+  }
+
+ 
+  
+  button:hover {
+
+    background-color: #054d37;
+    animation: inflar 0.4s forwards;
+
+  }
+
+  @keyframes inflar {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+    }
+  
+
