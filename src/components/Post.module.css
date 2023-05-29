@@ -127,3 +127,9 @@
 .commentList {
     margin-top: 2rem;
 }
+
+.h3 {
+    color: var(--gray-100);
+    line-height: 1.6;
+    margin: auto;
+}
