@@ -45,8 +45,84 @@ export function PostEdit() {
                     type="text"
                     name="modelo"
                     placeholder="Modelo"
-                    value={editveiculos.modelo}
+                    value={editveiculos.modelo || ''}
                     onChange={(e) => setEditVeiculos({ ...editveiculos, modelo: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="marca"
+                    placeholder="Marca"
+                    value={editveiculos.marca || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, marca: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="ano"
+                    placeholder="Ano"
+                    value={editveiculos.ano || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, ano: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="placa"
+                    placeholder="Placa"
+                    value={editveiculos.placa || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, placa: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="cor"
+                    placeholder="Cor"
+                    value={editveiculos.cor || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, cor: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="km"
+                    placeholder="Km"
+                    value={editveiculos.km || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, km: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="renavam"
+                    placeholder="Renavam"
+                    value={editveiculos.renavam || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, renavam: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="tipo"
+                    placeholder="Tipo"
+                    value={editveiculos.tipo || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, tipo: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="combustivel"
+                    placeholder="Combustível"
+                    value={editveiculos.combustivel || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, combustivel: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="chassis"
+                    placeholder="Chassis"
+                    value={editveiculos.chassis || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, chassis: e.target.value })}
+                />
+                <input
+                    type="text"
+                    name="valor"
+                    placeholder="Valor"
+                    value={editveiculos.valor || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, valor: e.target.value })}
+                />
+                <textarea
+                    name="comentario"
+                    placeholder="Deixe seu comentário"
+                    value={editveiculos.comentario || ''}
+                    onChange={(e) => setEditVeiculos({ ...editveiculos, comentario: e.target.value })}
                 />
                 <button type="submit">Salvar</button>
             </form>
