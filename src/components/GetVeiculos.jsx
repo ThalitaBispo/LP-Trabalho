@@ -24,12 +24,6 @@ export function Veiculos() {
     return <p>Carregando...</p>;
   }
 
-  const handleVeiculoClick = (veiculoId) => {
-    // Redirecionar para a página do veículo específico com base no veiculoId
-    // Implemente a lógica de redirecionamento aqui
-    console.log(`Clicou no veículo ${veiculoId}`);
-  };
-
   return (
     <article className={styles.post}>
       <div className={styles.content}>
@@ -50,7 +44,8 @@ export function Veiculos() {
                 <td >{veiculo.modelo}</td>
                 <td >{veiculo.marca}</td>
                 <td>
-                  <button   onClick={() => handleVeiculoClick(veiculo.id)}>
+                  {/* onClick={() => handleVeiculoClick(veiculo.id)} */}
+                  <button type='button' onClick={() => { window.location.href = `veiculo/edit/${veiculo.id}`; }}>
                     Editar
                   </button>
                 </td>
