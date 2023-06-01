@@ -27,7 +27,7 @@ export function Veiculos() {
   return (
     <article className={styles.post}>
       <div className={styles.content}>
-        <h2>VEÍCULOS</h2>
+        <h3>Lista de Veículos</h3>
       </div>
       <div className={styles.veiculos}>
         <table>
@@ -44,9 +44,13 @@ export function Veiculos() {
                 <td >{veiculo.modelo}</td>
                 <td >{veiculo.marca}</td>
                 <td>
-                  {/* onClick={() => handleVeiculoClick(veiculo.id)} */}
-                  <button type='button' onClick={() => { window.location.href = `veiculo/edit/${veiculo.id}`; }}>
+                  <button className={styles.btn} onClick={() => { window.location.href = `veiculo/edit/${veiculo.id}`; }}>
                     Editar
+                  </button>
+                </td>
+                <td>
+                  <button className={styles.btnDelet} onClick={() => { window.location.href = `veiculo/delete/${veiculo.id}`; }}>
+                    Deletar
                   </button>
                 </td>
               </tr>

@@ -1,5 +1,5 @@
 export function PostDelet() {
     return (
-        <h1>PortDelet</h1>
+        <h1>PostDelet</h1>
     )
 }
