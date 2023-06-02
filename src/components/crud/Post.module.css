@@ -9,39 +9,15 @@
 
 }
 
-.post+.post {
-    margin-top: 2rem;
-}
-
 .content {
     line-height: 1.6;
     color: var(--gray-300);
-    margin-top: 1rem;
-    margin-bottom: 3.25rem;
+    margin-top: 01rem;
+    margin-bottom: 1rem;
 }
 
 .content p {
     margin-top: 1rem;
-}
-
-.content a {
-    font-weight: bold;
-    color: var(--green-500);
-}
-
-.content a:hover {
-    color: var(--green-300);
-}
-
-.post>header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.post>header time {
-    font-size: 0.875rem;
-    color: var(--gray-400);
 }
 
 .author {
@@ -62,18 +38,6 @@
     color: var(--gray-400);
     line-height: 1.6;
 }
-
-.commentForm {
-    width: 100%;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--gray-600);
-}
-
-/* .commentForm>strong {
-    line-height: 1.6;
-    color: var(--gray-100);
-} */
 
 /*Criado*/
 .commentForm input {
@@ -115,7 +79,7 @@
 .commentForm button[type=submit] {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
-    margin-left: 40%;
+    margin-left: 0%;
     border-radius: 8px;
     border: 0;
     background: var(--green-500);
@@ -127,10 +91,6 @@
 
 .commentForm button[type=submit]:hover {
     background: var(--green-300);
-}
-
-.commentList {
-    margin-top: 2rem;
 }
 
 .h3 {
@@ -166,7 +126,6 @@
     border-radius: 8px;
     background: var(--gray-900);
     font-size: 1.2rem;
-    /* border: 1px solid var(--gray-600); */
 }
 
 table {

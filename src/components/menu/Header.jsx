@@ -1,13 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-//import { Menu } from './Menu';
-import { Post } from './Post';
-import { PostList } from './PostList';
-import { PostEdit } from './PostEdit';
-import { PostDelet } from './PostDelet';
+import { Post } from '../crud/Post';
+import { PostList } from '../crud/PostList';
+import { PostEdit } from '../crud/PostEdit';
+import { PostDelet } from '../crud/PostDelet';
 import { Menu } from './Menu';
-import { Veiculos } from './GetVeiculos';
+import { Veiculos } from '../crud/GetVeiculos';
 
-import { Sidebar } from './Sidebar.jsx';
+import { Sidebar } from '../sidebar/Sidebar.jsx';
 import styles from './Menu.module.css'
 
 export function Header() {

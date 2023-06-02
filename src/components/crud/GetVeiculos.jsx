@@ -1,5 +1,5 @@
 import styles from './Post.module.css';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export function Veiculos() {
@@ -27,7 +27,6 @@ export function Veiculos() {
   return (
     <article className={styles.post}>
       <div className={styles.content}>
-        <h3>Lista de Veículos</h3>
       </div>
       <div className={styles.veiculos}>
         <table>

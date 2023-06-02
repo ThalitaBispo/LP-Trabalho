@@ -1,7 +1,7 @@
 import styles from './Post.module.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 export function PostEdit() {
     const { id } = useParams();

@@ -36,13 +36,10 @@ export function Post() {
       );
 
       setStatus('Veículo cadastrado com sucesso!');
-      // Exibe um alerta informando que o veículo foi cadastrado
       alert('Veículo cadastrado com sucesso!');
-      // Reseta os campos do formulário
       setVeiculo({});
     } catch (error) {
       setStatus(`Falha: ${error}`);
-      // Exibe um alerta informando o erro ocorrido
       alert(`Falha: ${error}`);
     }
   }

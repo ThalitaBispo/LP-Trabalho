@@ -24,12 +24,8 @@
 }
 
 @media (max-width: 768px) {
-
-    /*responsivo*/
     html {
         font-size: 87.5%;
-        /*14px -> não cola em px porque viraria algo bruto, 
-        não adiantaria o usuário esoclher a font do dispositivo dele(a)*/
     }
 
     .wrapper {
